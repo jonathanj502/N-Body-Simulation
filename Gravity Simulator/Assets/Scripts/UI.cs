@@ -193,6 +193,7 @@ public class UI : MonoBehaviour
             Destroy(currentdso, 0);
         }
         cam.transform.position = new Vector3(0, 0, -100);
+        cam.transform.eulerAngles = new Vector3 (0, 0, 0);
     }
     // public void loadfigureeight()
     // {
@@ -207,11 +208,6 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // SphereEdit[] spheres = FindObjectsOfType<SphereEdit>();
-        // foreach (SphereEdit sphere in spheres)
-        // {
-        //     sphere.GetComponent<SphereEdit>().enabled = true;
-        // }
         dropdown();
     }
 }

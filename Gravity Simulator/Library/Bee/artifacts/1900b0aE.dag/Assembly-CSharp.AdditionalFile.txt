@@ -1,1 +1,1 @@
-C:\Users\scaml\Gravity Simulator
+C:\Users\scaml\Documents\GitHub\N-Body-Simulation\Gravity Simulator
