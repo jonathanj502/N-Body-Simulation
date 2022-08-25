@@ -22,16 +22,16 @@ public class SphereEdit : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()//backspace can delete obj
+    void FixedUpdate()
     {
-        if (Input.GetMouseButton(0)) //shows up when object is placed. fix so menu does not show up upon placing obj
+        if (Input.GetMouseButton(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             // Casts the ray and get the first game object hit
             Physics.Raycast(ray, out hit);
             if (hit.collider == true)//displays values of obj cliked on 
-            {//delete object when clicked followed by backspace
+            {
                 objhit = hit.collider;
                 objhit.GetComponent<Outline>().enabled = true;
                 canvasui.objcollider = objhit;
@@ -45,7 +45,7 @@ public class SphereEdit : MonoBehaviour
                 canvasui.uipropertiesdeactivate();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Backspace) && GetComponent<Outline>().enabled == true) //mash a couple times to act delete fix
+        if (Input.GetKeyDown(KeyCode.Backspace) && GetComponent<Outline>().enabled == true && IsMouseOverUI() == false) 
         {
             Destroy(gameObject, 0);
         }

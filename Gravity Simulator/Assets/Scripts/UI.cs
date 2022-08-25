@@ -47,7 +47,6 @@ public class UI : MonoBehaviour
         {
             floatxvelo = result;
         }
-        //floatxvelo = float.Parse(xvelo, CultureInfo.InvariantCulture);
         objcollider.GetComponent<Attractor>().velocity.x = floatxvelo;
     }
     public void changeyvelo()
@@ -68,7 +67,6 @@ public class UI : MonoBehaviour
         {
             floatzvelo = result;
         }
-        //floatzvelo = float.Parse(zvelo, CultureInfo.InvariantCulture);
         objcollider.GetComponent<Attractor>().velocity.z = floatzvelo;
     }
     public void changexpos()
@@ -79,7 +77,6 @@ public class UI : MonoBehaviour
         {
             floatxpos = result;
         }
-        //floatxpos = float.Parse(xpos, CultureInfo.InvariantCulture);
         Vector3 newpos = new Vector3 (floatxpos, objcollider.GetComponent<SphereEdit>().transform.position.y, objcollider.GetComponent<SphereEdit>().transform.position.z);
         objcollider.GetComponent<Transform>().position = newpos;
     }
@@ -91,7 +88,6 @@ public class UI : MonoBehaviour
         {
             floatypos = result;
         }
-        //floatypos = float.Parse(ypos, CultureInfo.InvariantCulture);
         Vector3 newpos = new Vector3 (objcollider.GetComponent<SphereEdit>().transform.position.x, floatypos, objcollider.GetComponent<SphereEdit>().transform.position.z);
         objcollider.GetComponent<Transform>().position = newpos;
     }
@@ -103,7 +99,6 @@ public class UI : MonoBehaviour
         {
             floatzpos = result;
         }
-        //floatzpos = float.Parse(zpos, CultureInfo.InvariantCulture);
         Vector3 newpos = new Vector3 (objcollider.GetComponent<SphereEdit>().transform.position.x, objcollider.GetComponent<SphereEdit>().transform.position.z, floatzpos);
         objcollider.GetComponent<Transform>().position = newpos;
     }
@@ -194,16 +189,6 @@ public class UI : MonoBehaviour
         }
         cam.transform.position = new Vector3(0, 0, -100);
         cam.transform.eulerAngles = new Vector3 (0, 0, 0);
-    }
-    // public void loadfigureeight()
-    // {
-    //     Debug.Log("solarsystem");
-    //     SceneManager.LoadScene("SolarSystem", LoadSceneMode.Single);
-    //     dropdownmenu.gameObject.SetActive(false);
-    // }
-    // Start is called before the first frame update
-    void Awake()
-    {
     }
     // Update is called once per frame
     void Update()

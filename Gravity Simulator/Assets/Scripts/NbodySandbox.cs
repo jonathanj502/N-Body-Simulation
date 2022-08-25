@@ -24,19 +24,13 @@ public class NbodySandbox : MonoBehaviour
         }        
         return xyzcoordinates;
     }
-    // Update is called once per frame
-    void Awake()
-    {
-    }
     void Update()
     {
         Vector3 xyzmouseposition = xyzcoord();
         dragndropSphere.transform.position = xyzmouseposition;
         if (Input.GetMouseButtonDown(0) && dragndropSphere.activeInHierarchy == true)
         {
-            //dragndropSphere.SetActive(false);  
             worldpos = xyzmouseposition;
-            //new Vector3 (xycoord().x, xycoord().y, 0);
             Instantiate(nbodyduplicate, worldpos, Quaternion.identity); 
             dragndropSphere.GetComponent<DistanceLine>().distancetext.text = null;
             GameObject.Find("Canvas").GetComponent<UI>().activatevalchange();
