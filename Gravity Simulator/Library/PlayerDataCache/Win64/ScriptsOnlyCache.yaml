@@ -102,10 +102,10 @@ ScriptsOnlyBuild:
     methodName: activatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: deactivatevalchange
+    methodName: valclear
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: valclear
+    methodName: deactivatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
     methodName: disableedit
@@ -120,10 +120,10 @@ ScriptsOnlyBuild:
     methodName: activatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: deactivatevalchange
+    methodName: valclear
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: valclear
+    methodName: deactivatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
     methodName: changemass
@@ -132,10 +132,10 @@ ScriptsOnlyBuild:
     methodName: activatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: deactivatevalchange
+    methodName: valclear
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: valclear
+    methodName: deactivatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
     methodName: clearworldspace
@@ -147,10 +147,10 @@ ScriptsOnlyBuild:
     methodName: activatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: deactivatevalchange
+    methodName: valclear
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: valclear
+    methodName: deactivatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
     methodName: dragndropsphere
@@ -168,10 +168,10 @@ ScriptsOnlyBuild:
     methodName: activatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: deactivatevalchange
+    methodName: valclear
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: valclear
+    methodName: deactivatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
     methodName: changezpos
@@ -180,10 +180,10 @@ ScriptsOnlyBuild:
     methodName: activatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: deactivatevalchange
+    methodName: valclear
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: valclear
+    methodName: deactivatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
     methodName: changeypos
@@ -192,10 +192,10 @@ ScriptsOnlyBuild:
     methodName: activatevalchange
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: deactivatevalchange
+    methodName: valclear
   - assembly: Assembly-CSharp
     fullTypeName: UI
-    methodName: valclear
+    methodName: deactivatevalchange
   sceneClasses:
     Assets/Scenes/Sandbox.unity:
     - Class: 1
@@ -219,6 +219,8 @@ ScriptsOnlyBuild:
     - Class: 54
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 96
       Script: {instanceID: 0}
@@ -315,8 +317,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 96
       Script: {instanceID: 0}
     - Class: 104
@@ -364,7 +364,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8022}
     - Class: 114
-      Script: {instanceID: 44380}
+      Script: {instanceID: 23858}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1708,5 +1708,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SolarSystem.unity
   - Assets/Scenes/Sandbox.unity
-  playerPath: C:/Users/scaml/Desktop/Unity Game Builds/Gravity Simulator/Gravity
-    Simulator.exe
+  playerPath: C:/Users/scaml/Desktop/Unity Porject/Gravity Simulator.exe
